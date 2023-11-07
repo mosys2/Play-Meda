@@ -3,75 +3,627 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Play Meda</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="node_modules/owl.carousel/dist/assets/owl.theme.default.css">
     <link rel="stylesheet" href="assets/css/style-fa.css">
 
 </head>
 <body>
     <header>
         <div class="container">
-            <div class="header-top-access">
-                <nav>
-                    <ul>
-                        <li><a href="#"> صفحه اصلی </a></li>
-                        <li><a href="#"> قوانین و مقررات </a></li>
-                        <li><a href="#"> تماس با ما </a></li>
-                        <li><a href="#"> درباره ما </a></li>
-                    </ul>
-                </nav>
-                <div class="top-contact">
-                    <div class="content">
-                        <span>پشتیبانی 24 ساعته</span>
-                        <a href="#">021-5874236</a>
+            <div class="herder-fix">
+                <div class="header-top-access">
+                    <nav>
+                        <ul>
+                            <li><a href="#"> صفحه اصلی </a></li>
+                            <li><a href="#"> قوانین و مقررات </a></li>
+                            <li><a href="#"> تماس با ما </a></li>
+                            <li><a href="#"> درباره ما </a></li>
+                        </ul>
+                    </nav>
+                    <div class="top-contact">
+                        <div class="content">
+                            <span>پشتیبانی 24 ساعته</span>
+                            <a href="#">021-5874236</a>
+                        </div>
+                        <div class="logo">
+                            <img src="assets/images/svg/call-calling.svg">
+                        </div>
                     </div>
-                    <div class="logo">
-                        <img src="assets/images/svg/call-calling.svg">
+                </div>
+                <div class="header-center-acces">
+                    <div class="row align-items-center">
+                        <div class="col-md-3">
+                            <div class="logo">
+                                <img src="assets/images/logo.png" class="img-fluid" alt="Play-Meda">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="search">
+                                <form action="#">
+                                    <input type="text" placeholder="جستجو..." class="form-control">
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="btns">
+                                <a href="#">
+                                    <div class="login-register">
+                                        ورود یا ثبت نام
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="backet">
+                                        <span>0</span>
+                                        <img src="assets/images/svg/cil_cart.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
-            <div class="header-center-acces">
-                <div class="row align-items-center">
-                    <div class="col-md-3">
-                        <div class="logo">
-                            <img src="assets/images/logo.png" class="img-fluid" alt="Play-Meda">
-                        </div>
+            <div class="header-bottom-access">
+                <div class="row">
+                    <div class="col-md-10 align-self-start">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mb-2 mb-lg-0">
+
+                                    <li class="nav-item dropdown d-flex">
+                                        <div class="menu-icon">
+                                            <img src="assets/images/svg/bi_gpu-card.svg" alt="">
+                                        </div>
+                                        <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            سخت افزار
+                                            <img class="pe-1" src="assets/images/svg/arrow-down.svg" alt="">
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">ایتم یک</a></li>
+                                            <li><a class="dropdown-item" href="#">ایتم 2</a></li>
+                                            <li><a class="dropdown-item" href="#">ایتم 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown d-flex">
+                                        <div class="menu-icon">
+                                            <img src="assets/images/svg/headphone.svg" alt="">
+                                        </div>
+                                        <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            لوازم جانبی
+                                            <img class="pe-1" src="assets/images/svg/arrow-down.svg" alt="">
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">ایتم یک</a></li>
+                                            <li><a class="dropdown-item" href="#">ایتم 2</a></li>
+                                            <li><a class="dropdown-item" href="#">ایتم 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown d-flex">
+                                        <div class="menu-icon">
+                                            <img src="assets/images/svg/arcticons_pc-creator.svg" alt="">
+                                        </div>
+                                        <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            کامپیوترهای آماده
+                                            <img class="pe-1" src="assets/images/svg/arrow-down.svg" alt="">
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">ایتم یک</a></li>
+                                            <li><a class="dropdown-item" href="#">ایتم 2</a></li>
+                                            <li><a class="dropdown-item" href="#">ایتم 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item dropdown d-flex">
+                                        <div class="menu-icon">
+                                            <img src="assets/images/svg/ant-design_laptop-outlined.svg " alt="">
+                                        </div>
+                                        <a class="nav-link" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            لپ تاپ
+                                            <img class="pe-1" src="assets/images/svg/arrow-down.svg" alt="">
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">ایتم یک</a></li>
+                                            <li><a class="dropdown-item" href="#">ایتم 2</a></li>
+                                            <li><a class="dropdown-item" href="#">ایتم 3</a></li>
+                                        </ul>
+                                    </li>
+
+                                </ul>
+
+                            </div>
+                        </nav>
                     </div>
-                    <div class="col-md-6">
-                        <div class="search">
-                            <form action="#">
-                                <input type="text" placeholder="جستجو..." class="form-control">
-                            </form>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="btns">
-                            <a href="#">
-                                <div class="backet">
-                                    <span>0</span>
-                                    <img src="assets/images/svg/cil_cart.svg" alt="">
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="login-register">
-
-                                    ورود یا ثبت نام
-
-                                </div>
-                            </a>
-
-                        </div>
+                    <div class="col-md-2 text-start">
+                        <button class="btn btn-info btn-orange">دست دوم</button>
                     </div>
                 </div>
-
             </div>
         </div>
     </header>
     <main>
+        <section class="slider">
+            <div class="container">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1">
 
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/images/slider/slide1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>بهترین لوازم گیمینگ <br>برای بهترینا!</h1>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/images/slider/slide1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h1>بهترین لوازم گیمینگ <br>برای بهترینا!</h1>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="carousel-control-prev arrows-slider" type="button"
+                        data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                        <img src="assets/images/svg/previus-arrow.svg" alt="Previous">
+                    </button>
+                    <button class="carousel-control-next arrows-slider" type="button"
+                        data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                        <img src="assets/images/svg/next-arrow.svg" alt="next">
+                    </button>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="disccont">
+            <div class="container">
+                <div class="header">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6">
+                            <div class="discont-timer">
+                                <h3>تخفیف ها</h3>
+                                <div class="timer" data-time="12354256">
+                                    <h3><span id="d-sec">00</span> : <span id="d-min">00</span> : <span d-hor>00</span>
+                                    </h3>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="show-all">
+                                <a href="#">مشاهده همه</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-box">
+                    <div id="owl-discount" class="owl-carousel owl-theme">
+                        <!-- Item 1 -->
+                        <div class="item">
+                            <div class="card">
+                                <img class="card-img img-fluid" src="assets/images/products/1.png" alt="">
+                                <div class="card-img-overlay">
+                                    <span class="like "></span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="title">کارت گرافیک RTX 3080</div>
+                                    <div class="price-box"><span class="price">۴۷,۵۰۰,۰۰۰ تومان</span><span
+                                            class="discont">۵۰,۰۰۰,۰۰۰</span><span class="off">5% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="item">
+                            <div class="card">
+                                <img class="card-img img-fluid" src="assets/images/products/2.png" alt="">
+                                <div class="card-img-overlay">
+                                    <span class="like "></span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="title">میکروفون RAZER</div>
+                                    <div class="price-box"><span class="price">25,۵۰۰,۰۰۰ تومان</span><span
+                                            class="discont">۵۰,۰۰۰,۰۰۰</span><span class="off">5% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="item">
+                            <div class="card">
+                                <img class="card-img img-fluid" src="assets/images/products/3.png" alt="">
+                                <div class="card-img-overlay">
+                                    <span class="like"></span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="title">موس گیمینگ msi</div>
+                                    <div class="price-box"><span class="price">25,۵۰۰,۰۰۰ تومان</span><span
+                                            class="discont">۵۰,۰۰۰,۰۰۰</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span id="next-discount-slide" class="next-slide">
+                        <img src="assets/images/svg/previus-arrow.svg">
+                    </span>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="suggest">
+            <div class="container">
+                <div class="header">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6">
+                            <div class="discont-timer">
+                                <h3>پیشنهاد ها</h3>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6">
+                            <div class="show-all">
+                                <a href="#">مشاهده همه</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-box">
+                    <div id="owl-suggest" class="owl-carousel owl-theme">
+                        <!-- Item 1 -->
+                        <div class="item">
+                            <div class="card">
+                                <img class="card-img img-fluid" src="assets/images/products/1.png" alt="">
+                                <div class="card-img-overlay">
+                                    <span class="like"></span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="title">کارت گرافیک RTX 3080</div>
+                                    <div class="price-box"><span class="price">۴۷,۵۰۰,۰۰۰ تومان</span><span
+                                            class="discont">۵۰,۰۰۰,۰۰۰</span><span class="off">5% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="item">
+                            <div class="card">
+                                <img class="card-img img-fluid" src="assets/images/products/2.png" alt="">
+                                <div class="card-img-overlay">
+                                    <span class="like"></span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="title">میکروفون RAZER</div>
+                                    <div class="price-box"><span class="price">25,۵۰۰,۰۰۰ تومان</span><span
+                                            class="discont">۵۰,۰۰۰,۰۰۰</span><span class="off">5% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="item">
+                            <div class="card">
+                                <img class="card-img img-fluid" src="assets/images/products/3.png" alt="">
+                                <div class="card-img-overlay">
+                                    <span class="like"></span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="title">موس گیمینگ msi</div>
+                                    <div class="price-box"><span class="price">25,۵۰۰,۰۰۰ تومان</span><span
+                                            class="discont">۵۰,۰۰۰,۰۰۰</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <span id="next-suggest-slide" class="next-slide">
+                        <img src="assets/images/svg/previus-arrow.svg">
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="best-selling">
+            <div class="container">
+                <div class="box-selling">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="best-selling-title">
+                                <h2>پرفروش‌ترین محصولات</h2>
+                                <img src="assets/images/best-selling.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="carousel-box orange">
+                                <div id="owl-best-selling" class="owl-carousel owl-theme">
+                                    <!-- Item 1 -->
+                                    <div class="item">
+                                        <div class="card">
+                                            <img class="card-img img-fluid" src="assets/images/products/1.png" alt="">
+                                            <div class="card-img-overlay">
+                                                <span class="like"></span>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="title">کارت گرافیک RTX 3080</div>
+                                                <div class="price-box"><span class="price">۴۷,۵۰۰,۰۰۰ تومان</span><span
+                                                        class="discont">۵۰,۰۰۰,۰۰۰</span><span class="off">5% off</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Item 2 -->
+                                    <div class="item">
+                                        <div class="card">
+                                            <img class="card-img img-fluid" src="assets/images/products/2.png" alt="">
+                                            <div class="card-img-overlay">
+                                                <span class="like"></span>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="title">میکروفون RAZER</div>
+                                                <div class="price-box"><span class="price">25,۵۰۰,۰۰۰ تومان</span><span
+                                                        class="discont">۵۰,۰۰۰,۰۰۰</span><span class="off">5% off</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Item 3 -->
+                                    <div class="item">
+                                        <div class="card">
+                                            <img class="card-img img-fluid" src="assets/images/products/3.png" alt="">
+                                            <div class="card-img-overlay">
+                                                <span class="like"></span>
+                                            </div>
+                                            <div class="card-footer">
+                                                <div class="title">موس گیمینگ msi</div>
+                                                <div class="price-box"><span class="price">25,۵۰۰,۰۰۰ تومان</span><span
+                                                        class="discont">۵۰,۰۰۰,۰۰۰</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <section class="secondhand">
+            <div class="container">
+                <div class="header">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6">
+                            <div class="discont-timer">
+                                <h3>دست دوم</h3>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="show-all">
+                                <a href="#">مشاهده همه</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-box">
+                    <div id="owl-secondhand" class="owl-carousel owl-theme">
+                        <!-- Item 1 -->
+                        <div class="item">
+                            <div class="card">
+                                <img class="card-img img-fluid" src="assets/images/products/1.png" alt="">
+                                <div class="card-img-overlay">
+                                    <span class="like"></span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="title">کارت گرافیک RTX 3080</div>
+                                    <div class="price-box"><span class="price">۴۷,۵۰۰,۰۰۰ تومان</span><span
+                                            class="discont">۵۰,۰۰۰,۰۰۰</span><span class="off">5% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 2 -->
+                        <div class="item">
+                            <div class="card">
+                                <img class="card-img img-fluid" src="assets/images/products/2.png" alt="">
+                                <div class="card-img-overlay">
+                                    <span class="like"></span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="title">میکروفون RAZER</div>
+                                    <div class="price-box"><span class="price">25,۵۰۰,۰۰۰ تومان</span><span
+                                            class="discont">۵۰,۰۰۰,۰۰۰</span><span class="off">5% off</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Item 3 -->
+                        <div class="item">
+                            <div class="card">
+                                <img class="card-img img-fluid" src="assets/images/products/3.png" alt="">
+                                <div class="card-img-overlay">
+                                    <span class="like"></span>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="title">موس گیمینگ msi</div>
+                                    <div class="price-box"><span class="price">25,۵۰۰,۰۰۰ تومان</span><span
+                                            class="discont">۵۰,۰۰۰,۰۰۰</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <span id="next-secondhand-slide" class="next-slide">
+                        <img src="assets/images/svg/Next-arrow-orange.png">
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="category">
+            <div class="container">
+                <div class="header">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-md-6">
+                            <div class="discont-timer">
+                                <h3>دسته بندی</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="category-item">
+                                    <div class="icon">
+                                        <img src="assets/images/svg/graphic-card.svg" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <h3>کارت گرافیک</h3>
+                                        <img src="assets/images/svg/arrow-left-category.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="category-item">
+                                    <div class="icon">
+                                        <img src="assets/images/svg/mouse.svg" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <h3>موس</h3>
+                                        <img src="assets/images/svg/arrow-left-category.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="category-item">
+                                    <div class="icon">
+                                        <img src="assets/images/svg/bi_keyboard.svg" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <h3>کیبورد</h3>
+                                        <img src="assets/images/svg/arrow-left-category.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="category-item">
+                                    <div class="icon">
+                                        <img src="assets/images/svg/moterboard.svg" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <h3>مادربورد</h3>
+                                        <img src="assets/images/svg/arrow-left-category.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="category-item">
+                                    <div class="icon">
+                                        <img src="assets/images/svg/bi_cpu.svg" alt="">
+                                    </div>
+                                    <div class="title">
+                                        <h3>پردازنده</h3>
+                                        <img src="assets/images/svg/arrow-left-category.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="#">
+                                <div class="category-item">
+
+                                    <div class="title">
+                                        <h3>بیشتر</h3>
+                                        <img src="assets/images/svg/arrow-left-category.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="addres-box">
+                        <div class="content">
+                            <h3>آدرس فروشگاه</h3>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                            </p>
+                        </div>
+                        <div class="contact">
+                            شماره تماس : <span>۰۲۱-۵۸۷۴۲۳۶</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="social-box">
+                        <h3>مارا دنبال کنید</h3>
+                        <div class="social-items">
+                            <a href="#"><img src="" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-img">
+                        <img src="assets/images/footer-imageg.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
